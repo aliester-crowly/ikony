@@ -3,45 +3,118 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Мастерская икон</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/path/to/font-awesome/css/font-awesome.min.css">
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <!-- Insert to your webpage before the </head> -->
+    <script src="js/carouselengine/jquery.js"></script>
+    <script src="js/carouselengine/amazingcarousel.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/carouselengine/initcarousel-1.css">
+    <script src="js/carouselengine/initcarousel-1.js"></script>
+    <!-- End of head section HTML codes -->
 </head>
+
 <body>
-   <div class="top-bar">
-    <div class="top-bar_wrapper">
-        <ul>
-            <li class="top-bar_list-item"><a href="">Каталог</a></li>
-            <li class="top-bar_list-item"><a href="">Доставка</a></li>
-            <li class="top-bar_list-item"><a href="">Отзывы</a></li>
-            <li class="top-bar_list-item"><a href="">О нас</a></li>
-            <li class="top-bar_list-item"><a href="">Контакты</a></li>
-            <li class="top-bar_call-back"><span class="call-back_phone"><i class="fa fa-phone" aria-hidden="true"></i>
+    <div class="top-bar">
+        <div class="top-bar_wrapper">
+            <ul>
+                <li class="top-bar_list-item"><a href="">О нас</a></li>
+                <li class="top-bar_list-item"><a href="">Каталог</a></li>
+                <li class="top-bar_list-item"><a href="">Как купить?</a></li>
+                <li class="top-bar_list-item"><a href="">Доставка</a></li>
+                <li class="top-bar_list-item"><a href="">Контакты</a></li>
+                <li class="top-bar_call-back"><span class="call-back_phone"><i class="fa fa-phone" aria-hidden="true"></i>
 +38 (068) 202-31-58</span><a class="call-back_btn">Закажите звонок!</a></li>
-        </ul>
+            </ul>
+        </div>
     </div>
-</div>
-<div class="header">
-    <h1 class="header-text">Мастерская икон</h1>
-    <h3 class="header-autor">Юрия Думанского</h3>
-</div>
-<div class="main-wrapper">
-    <div class="fotorama" data-keyboard="true">
-        <img src="images/catalog/ahtyrskaya1.jpg">
-        <img src="images/catalog/mihail1.jpg">
-        <img src="/images/catalog/nikolay1.jpg" alt="">
-        <img src="/images/catalog/semistrelnaya1.jpg" alt="">
-        <img src="/images/catalog/tajnayavecherya.jpg" alt="">
+    <div class="header">
+        <h1 class="header-text">Мастерская икон</h1>
+        <h3 class="header-autor">Юрия Думанского</h3>
+    </div>
+    <div class="main-wrapper">
+        <div style="margin:0px auto;">
+
+            <!-- Insert to your webpage where you want to display the carousel -->
+            <div id="amazingcarousel-container-1">
+                <div id="amazingcarousel-1" style="display:none;position:relative;width:100%;max-width:720px;margin:0px auto 0px;">
+                    <div class="amazingcarousel-list-container">
+                        <ul class="amazingcarousel-list">
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/ahtyrskaya1-lightbox.jpg" title="Икона Ахтырская" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/ahtyrskaya1.jpg" alt="Икона Ахтырская" /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Ахтырская</div>
+                                    <div class="amazingcarousel-description">Икона Ахтырская - под окладом, покрытым серебром и позолотой. Писанная! Не фотография. Деревянная рама. Размеры 318 на 362 мм. Цена от производителя. </div>
+                                </div>
+                            </li>
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/mihail1-lightbox.jpg" title="Икона Архистратиг Михаил" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/mihail1.jpg" alt="Икона Архистратиг Михаил" /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Архистратиг Михаил</div>
+                                    <div class="amazingcarousel-description">Икона Архистратиг Михаил - под окладом, покрытым серебром и позолотой. Писанная! Не фотография. Деревянная рама. Размеры 270 на 308 мм. Цена от производителя. </div>
+                                </div>
+                            </li>
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/nikolay1-lightbox.jpg" title="Икона Николай Чудотворец
+" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/nikolay1.jpg" alt="Икона Николай Чудотворец
+" /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Николай Чудотворец
+                                    </div>
+                                    <div class="amazingcarousel-description">Икона Николай Чудотворец - под окладом, покрытым серебром и позолотой. Писанная! Не фотография. Деревянная рама. Размеры 278 на 332 мм. Цена от производителя. </div>
+                                </div>
+                            </li>
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/semistrelnaya1-lightbox.jpg" title="Икона Семистрельная" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/semistrelnaya1.jpg" alt="Икона Семистрельная" /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Семистрельная</div>
+                                    <div class="amazingcarousel-description">Икона Семистрельная - под окладом, покрытым серебром и позолотой. Писанная! Не фотография. Деревянная рама. Размеры 292 на 362 мм. Цена от производителя. </div>
+                                </div>
+                            </li>
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/tajnayavecherya-lightbox.jpg" title="Икона Тайна вечеря" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/tajnayavecherya.jpg" alt="Икона Тайна вечеря" /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Тайна вечеря</div>
+                                    <div class="amazingcarousel-description">Икона Тайна вечеря - под окладом, покрытым серебром и позолотой. Писанная! Не фотография. Деревянная рама. Размеры 278 на 332 мм. Цена от производителя. </div>
+                                </div>
+                            </li>
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/tajnayavecherya2-lightbox.jpg" title="tajnayavecherya2" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/tajnayavecherya2.jpg" alt="tajnayavecherya2" /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Тайна вечеря</div>
+                                    <div class="amazingcarousel-description">Икона Тайна вечеря - под окладом, покрытым серебром и позолотой. Писанная! Не фотография. Деревянная рама. Размеры 278 на 332 мм. Цена от производителя.</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="amazingcarousel-prev"></div>
+                        <div class="amazingcarousel-next"></div>
+                    </div>
+                    <div class="amazingcarousel-nav"></div>
+                </div>
+            </div>
+            <!-- End of body section HTML codes -->
+
+        </div>
+        <div class="reviews"></div>
     </div>
 
-</div>
 
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 </body>
 
 </html>

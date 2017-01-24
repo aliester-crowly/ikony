@@ -14,43 +14,50 @@ html {
 /*ШАПКА*/
 
 .top-bar {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
     margin-top: 0;
     padding-top: 0;
     height: 50px;
     width: 100%;
-    background: rgba(68, 71, 73, 0.9);
+    background: #191c1c;
+    border-top: 1px solid #787878;
+    border-bottom: 1px solid #787878;
 }
 
 .top-bar_wrapper {
     height: inherit;
-    width: 900px;
+    width: 960px;
     display: block;
     margin: 0 auto;
+    margin-top: -14px;
     font-family: 'Helvetica Neue', helvetica, sans-serif;
     font-size: 14px;
-    color: white;
+    color: #b7b8b8;
 }
 
 .top-bar_list-item a{
     display: block;
-    margin-top: 18px;
+    position: relative;
+    top: 18px;
     font-family: 'Helvetica Neue', helvetica, sans-serif;
     font-size: 14px;
     color: white;
-    line-height: 16px;
     text-decoration: none; 
     cursor: pointer;
 }
 
 .top-bar_list-item {
     height: 50px;
-    width: 60px;
+    width: 80px;
     list-style: none;
     display: inline-block;
     float: left;
     text-align: center;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .top-bar_list-item:hover {
@@ -114,8 +121,12 @@ html {
     height: 80px;
     margin: 0 auto;
     margin-bottom: 0px;
+    margin-top: 50px;
     padding: 20px 20px;
     background-color: black;
+    background-image: url(/images/background/header10black.jpg);
+    border-top: 1px solid #787878;
+    border-bottom: 1px solid #787878;
     
 }
 
@@ -127,7 +138,7 @@ html {
     font-size: 48px;
     font-family: 'Lobster', helvetica, sans-serif;
     font-weight: 1000;
-    color: #C79810;
+    color: /*#C79810*/ #FEC56A /*#FEE4BD*/;
     text-align: center;
     text-shadow: 1px 1px 1px black;
 }
@@ -152,19 +163,16 @@ html {
     right: 0;
     text-align: center;
     font: 400 28px 'Lobster', Helvetica, sans-serif;
-    color: #A27D0D;
+    color: #FEC56A;
     text-shadow: 1px 1px 45px yellow; 
     margin-bottom: 20px;
 }
 
 .main-wrapper {
     display: block;
-    width: 990px;
-    height: auto;
+    width: 998px;
+    height: 2000px;
     margin: 0 auto;
-}
-
-.fotorama {
-    width: auto;
-    height: auto;
+    background: white;
+    border: 1px solid #787878;
 }
