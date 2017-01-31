@@ -64,6 +64,10 @@ html {
 
 .top-bar_list-item:hover {
     background: rgba(49, 146, 211, 0.8);
+        transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
 }
 
 .top-bar_call-back {

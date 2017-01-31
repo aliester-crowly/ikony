@@ -72,7 +72,7 @@ jQuery(document).ready(function(){
         navswitchonmouseover:false,
         showitembackgroundimage:false,
         watermarklink:"http://amazingcarousel.com?source=watermark",
-        arrowimage:"arrows-48-48-2.png",
+        arrowimage:"arrows-48-48-1.png",
         showbackgroundimage:false,
         spacing:4,
         scrollitems:1,
