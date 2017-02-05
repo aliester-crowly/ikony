@@ -1,9 +1,12 @@
 html {
-        background: rgba(214, 214, 214, 0.8) /*url(/images/background/bg-grey.jpg) no-repeat center center fixed*/;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+background-color:black;
+background-image:
+radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
             /*background-image: url(/images/background/gray-floral.png);*/
 
 } 
@@ -12,6 +15,11 @@ html {
     background: fixed url(/images/background/bg-silver2.jpg) repeat;
     background-size: 50%;
 }*/
+html,
+body {
+  height: 100%;
+}
+
 
 /*ШАПКА*/
 
@@ -24,7 +32,7 @@ html {
     padding-top: 0;
     height: 50px;
     width: 100%;
-    background: #191c1c;
+    background: #222222;
     border-top: 1px solid #787878;
     border-bottom: 1px solid #787878;
 }
@@ -186,50 +194,47 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eab92d', end
 /*Контент*/
 
 .content-wrapper {
-    display: block;
     width: 998px;
-    height: auto;
+   display: table;
+  height: 100%;
     margin: 0 auto;
     background: white;
     border: 1px solid #787878;
 }
 
 .content-about,
-.content-why,
-.content-catalog {
+.content-catalog,
+.content-info-block,
+.content-howtobuy{
     width: auto;
     height: auto;
     position: relative;
+    font-size: 1em;
 }
 
-.content-about_h1,
-.content-why_h1,
-.content-catalog_h1 {
-  /* background: rgb(149, 149, 149);
-    background: -moz-linear-gradient(45deg, rgba(149, 149, 149, 1) 0%, rgba(13, 13, 13, 1) 46%, rgba(1, 1, 1, 1) 50%, rgba(10, 10, 10, 1) 53%, rgba(78, 78, 78, 1) 76%, rgba(56, 56, 56, 1) 87%, rgba(27, 27, 27, 1) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(149, 149, 149, 1) 0%, rgba(13, 13, 13, 1) 46%, rgba(1, 1, 1, 1) 50%, rgba(10, 10, 10, 1) 53%, rgba(78, 78, 78, 1) 76%, rgba(56, 56, 56, 1) 87%, rgba(27, 27, 27, 1) 100%);
-    background: linear-gradient(45deg, rgba(149, 149, 149, 1) 0%, rgba(13, 13, 13, 1) 46%, rgba(1, 1, 1, 1) 50%, rgba(10, 10, 10, 1) 53%, rgba(78, 78, 78, 1) 76%, rgba(56, 56, 56, 1) 87%, rgba(27, 27, 27, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b', GradientType=1);*/
-    background: rgb(30,87,153);
+.content-about_h2,
+.content-catalog_h2,
+.content-info-block_h2,
+.content-howtobuy_h2{
+background: rgb(30,87,153);
 background: -moz-linear-gradient(left, rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%);
 background: -webkit-linear-gradient(left, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%);
 background: linear-gradient(to right, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 );
+    background-color: darkgreen;
     text-align: center;
-    font: 400 28px 'Lobster', Helvetica, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans";
+    font-size: 1.5em;
     color: ghostwhite;
 }
 
 .content-about_p {
     text-align: left;
     margin: 5px 10px;
+    font-family: "Trebuchet MS", "Lucida Sans";
 }
 
-.content-why_list {
-    list-style: disc;
-    text-align: left;
-    margin: 5px 10px;
-}
+
 
 /*Каталог*/
 .content-catalog_item {
@@ -237,7 +242,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
     display: block;
     width: auto;
     height: 600px;
-    border: solid 1px grey;
+    border-bottom: solid 1px grey;
 }
 
 .content-catalog_item h3 {
@@ -259,7 +264,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
     margin-right: 150px;
     height: 450px;
     width: 400px;
-    border: solid 1px black;
+    outline: #C29B00 solid 2px;
 }
 
 .catalog-menu_material {
@@ -323,6 +328,69 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
     background: none;
     background-color: #b48f4f;
     color: white;
+}
 
+.content-info-block {
+    font-size: 0.9em;
+    font-family: "Trebuchet MS", "Lucida Sans";
+}
 
+.content-infoblock_text {
+    padding-left: 10px;
+    text-decoration: underline;
+}
+
+.content-infoblock_img {
+    margin: 0 auto;
+    margin-left: 40%
+}
+
+.content-infoblock_list {
+          font-family: "Trebuchet MS", "Lucida Sans";
+    font-size: 1em;
+}
+
+/*Как покупать*/
+.content-howtobuy_list li {
+        font-family: "Trebuchet MS", "Lucida Sans";
+    font-size: 1em;
+}
+
+.content {
+  display: table-row;
+  height: 100%;
+}
+
+.content-footer {
+      height: 120px;
+    width: 100%;
+    background-color: #222222;
+    color: whitesmoke;
+    border: 1px solid #787878;
+}
+
+.content-contacts {
+    height: 120px;
+    width: 998px;
+    margin: 0 auto;
+}
+
+.content-contacts h4 {
+    margin-left: 10px;
+}
+
+.content-contacts_list {
+    position: relative;
+    top: -15px;
+ list-style: none;  
+}
+
+.content-contacts_list-link {
+    font-family: "Trebuchet MS", "Lucida Sans";
+    color: #D3D3D3;
+    font-size: 0.8em;
+}
+.content-social-btn {
+}
+.content-links {
 }

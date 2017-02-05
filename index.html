@@ -5,22 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Мастерская икон</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/popup.css">
     <link rel="stylesheet" href="/path/to/font-awesome/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-    <!-- Слайдер -->
-    <script src="js/carouselengine/jquery.js"></script>
-    <script src="js/carouselengine/amazingcarousel.js"></script>
-    <script src="js/carouselengine/initcarousel-1.js"></script>
     <link rel="stylesheet" type="text/css" href="js/carouselengine/initcarousel-1.css">
-        <!-- End of head section HTML codes -->
+    <!-- Слайдер -->
+    <link rel="stylesheet" href="/js/multizoom/css/multizoom.css" type="text/css">
     <!--lupa-->
-   <link rel="stylesheet" href="/js/multizoom/css/multizoom.css" type="text/css">
-<script type="text/javascript" src="/js/multizoom/js/jquery.min.js"></script>
-<script type="text/javascript" src="/js/multizoom/js/multizoom.js">
-</script>
+
+    <!--подкючаем jquery-->
+    <script type="text/javascript" src="/js/fancybox/jquery.min.js"></script>
+
+    <!--подкючаем fancybox-->
+    <link rel="stylesheet" type="text/css" media="all" href="js/fancybox/jquery.fancybox.css">
+    <script type="text/javascript" src="js/fancybox/jquery.fancybox.js"></script>
+
+    <script src="js/carouselengine/jquery.js"></script>
+    <!-- Слайдер -->
+    <script src="js/carouselengine/amazingcarousel.js"></script>
+    <!-- Слайдер -->
+    <script src="js/carouselengine/initcarousel-1.js"></script>
+    <!-- Слайдер -->
+    <script type="text/javascript" src="/js/multizoom/js/jquery.min.js"></script>
+    <!--lupa-->
+    <script type="text/javascript" src="/js/multizoom/js/multizoom.js"></script>
+    <!--lupa-->
 
 </head>
 
@@ -28,331 +39,1131 @@
     <div class="top-bar">
         <div class="top-bar_wrapper">
             <ul>
-                <li class="top-bar_list-item"><a href="">О нас</a></li>
-                <li class="top-bar_list-item"><a href="">Каталог</a></li>
-                <li class="top-bar_list-item"><a href="">Как купить?</a></li>
-                <li class="top-bar_list-item"><a href="">Доставка</a></li>
-                <li class="top-bar_list-item"><a href="">Контакты</a></li>
+                <li class="top-bar_list-item"><a href="#home">Главная</a></li>
+                <li class="top-bar_list-item"><a href="#catalog">Каталог</a></li>
+                <li class="top-bar_list-item"><a href="#howtobuy">Как купить?</a></li>
+                <li class="top-bar_list-item"><a href="#info">Доставка</a></li>
+                <li class="top-bar_list-item"><a href="#footer">Контакты</a></li>
                 <li class="top-bar_call-back"><span class="call-back_phone"><i class="fa fa-phone" aria-hidden="true"></i>
-+38 (068) 202-31-58</span><a class="call-back_btn">Закажите звонок!</a></li>
++38 (068) 202-31-58</span><a href="#feedback" rel="nofollow" class="call-back_btn">Закажите звонок!</a></li>
             </ul>
         </div>
     </div>
-    <div class="header">
+    <div class="header" id="home">
         <h1 class="header-text">Мастерская икон</h1>
-        <h3 class="header-autor">-2006-</h3>
+        <h3 class="header-autor" id="home">-2006-</h3>
     </div>
     <div class="content-wrapper">
         <div style="margin:0px auto;">
-    
-<!-- Insert to your webpage where you want to display the carousel -->
-<div id="amazingcarousel-container-1">
-    <div id="amazingcarousel-1" style="display:none;position:relative;width:100%;max-width:720px;margin:0px auto 0px;">
-        <div class="amazingcarousel-list-container">
-            <ul class="amazingcarousel-list">
-                <li class="amazingcarousel-item">
-                    <div class="amazingcarousel-item-container">
-<div class="amazingcarousel-image"><a href="images/catalog/ahtyr-mater-big-ligthbox-lightbox.JPG" title="Икона Ахтырская Божия Матерь"  class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/catalog/ahtyr-mater-big-ligthbox.JPG"  alt="Икона Ахтырская Божия Матерь" /></a></div>
-<div class="amazingcarousel-title">Икона Ахтырская Божия Матерь</div>
-<div class="amazingcarousel-description">Цена: 5500 грн</div>                    </div>
-                </li>
-                <li class="amazingcarousel-item">
-                    <div class="amazingcarousel-item-container">
-<div class="amazingcarousel-image"><a href="images/catalog/georg-big-lightbox-lightbox.JPG" title="Икона Георгий Победоносец"  class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/catalog/georg-big-lightbox.JPG"  alt="Икона Георгий Победоносец" /></a></div>
-<div class="amazingcarousel-title">Икона Георгий Победоносец</div>
-<div class="amazingcarousel-description">Цена: 4500 грн</div>                    </div>
-                </li>
-                <li class="amazingcarousel-item">
-                    <div class="amazingcarousel-item-container">
-<div class="amazingcarousel-image"><a href="images/catalog/hospod-big2-lightbox-lightbox.JPG" title="Икона Господь Вседержитель"  class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/catalog/hospod-big2-lightbox.JPG"  alt="Икона Господь Вседержитель" /></a></div>
-<div class="amazingcarousel-title">Икона Господь Вседержитель</div>
-<div class="amazingcarousel-description">Цена: 5000 грн</div>                    </div>
-                </li>
-                <li class="amazingcarousel-item">
-                    <div class="amazingcarousel-item-container">
-<div class="amazingcarousel-image"><a href="images/catalog/hospod-big3-lightbox-lightbox.JPG" title="Икона Господь Вседержитель"  class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/catalog/hospod-big3-lightbox.JPG"  alt="Икона Господь Вседержитель" /></a></div>
-<div class="amazingcarousel-title">Икона Господь Вседержитель</div>
-<div class="amazingcarousel-description">Цена: 5000 грн</div>                    </div>
-                </li>
-                <li class="amazingcarousel-item">
-                    <div class="amazingcarousel-item-container">
-<div class="amazingcarousel-image"><a href="images/catalog/hospod-big-lightbox-lightbox.JPG" title="hospod-big-lightbox"  class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/catalog/hospod-big-lightbox.JPG"  alt="hospod-big-lightbox" /></a></div>
-<div class="amazingcarousel-title">hospod-big-lightbox</div>
-<div class="amazingcarousel-description"></div>                    </div>
-                </li>
-                <li class="amazingcarousel-item">
-                    <div class="amazingcarousel-item-container">
-<div class="amazingcarousel-image"><a href="images/catalog/kazan3d-lightbox-lightbox.JPG" title="Икона Казанская Божия Матерь"  class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/catalog/kazan3d-lightbox.JPG"  alt="Икона Казанская Божия Матерь" /></a></div>
-<div class="amazingcarousel-title">Икона Казанская Божия Матерь</div>
-<div class="amazingcarousel-description">Цена: 3500 грн</div>                    </div>
-                </li>
-                <li class="amazingcarousel-item">
-                    <div class="amazingcarousel-item-container">
-<div class="amazingcarousel-image"><a href="images/catalog/kazan-marer-angel-lightbox-lightbox.JPG" title="Икона Казанская Божия Матерь"  class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/catalog/kazan-marer-angel-lightbox.JPG"  alt="Икона Казанская Божия Матерь" /></a></div>
-<div class="amazingcarousel-title">Икона Казанская Божия Матерь</div>
-<div class="amazingcarousel-description">Цена: 5000 грн</div>                    </div>
-                </li>
-                <li class="amazingcarousel-item">
-                    <div class="amazingcarousel-item-container">
-<div class="amazingcarousel-image"><a href="images/catalog/kazan-mater-lightbox-lightbox.JPG" title="Икона Казанская Божия Матерь"  class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/catalog/kazan-mater-lightbox.JPG"  alt="Икона Казанская Божия Матерь" /></a></div>
-<div class="amazingcarousel-title">Икона Казанская Божия Матерь</div>
-<div class="amazingcarousel-description">Цена: 5000 грн</div>                    </div>
-                </li>
-                <li class="amazingcarousel-item">
-                    <div class="amazingcarousel-item-container">
-<div class="amazingcarousel-image"><a href="images/catalog/kazan-para-m2-lightbox-lightbox.JPG" title="Икона Иисус Христос и Казанская Божия Матерь"  class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/catalog/kazan-para-m2-lightbox.JPG"  alt="Икона Иисус Христос и Казанская Божия Матерь" /></a></div>
-<div class="amazingcarousel-title">Икона Иисус Христос и Казанская Божия Матерь</div>
-<div class="amazingcarousel-description">Цена: 5000 грн</div>                    </div>
-                </li>
-                <li class="amazingcarousel-item">
-                    <div class="amazingcarousel-item-container">
-<div class="amazingcarousel-image"><a href="images/catalog/kazan-small-lightbox-lightbox.JPG" title="Икона Казанская Божия Матерь"  class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/catalog/kazan-small-lightbox.JPG"  alt="Икона Казанская Божия Матерь" /></a></div>
-<div class="amazingcarousel-title">Икона Казанская Божия Матерь</div>
-<div class="amazingcarousel-description">Цена: 5000 грн</div>                    </div>
-                </li>
-                <li class="amazingcarousel-item">
-                    <div class="amazingcarousel-item-container">
-<div class="amazingcarousel-image"><a href="images/catalog/miha-angel-lightbox-lightbox.JPG" title="Икона Архангел Михаил "  class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/catalog/miha-angel-lightbox.JPG"  alt="Икона Архангел Михаил " /></a></div>
-<div class="amazingcarousel-title">Икона Архангел Михаил </div>
-<div class="amazingcarousel-description">Цена: 4500 грн</div>                    </div>
-                </li>
-                <li class="amazingcarousel-item">
-                    <div class="amazingcarousel-item-container">
-<div class="amazingcarousel-image"><a href="images/catalog/mihajil-bezkryl-lightbox-lightbox.JPG" title="Икона Архангел Михаил "  class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/catalog/mihajil-bezkryl-lightbox.JPG"  alt="Икона Архангел Михаил " /></a></div>
-<div class="amazingcarousel-title">Икона Архангел Михаил </div>
-<div class="amazingcarousel-description">Цена: 5000 грн</div>                    </div>
-                </li>
-                <li class="amazingcarousel-item">
-                    <div class="amazingcarousel-item-container">
-<div class="amazingcarousel-image"><a href="images/catalog/mihajil-lightbox-lightbox.JPG" title="Икона Архангел Михаил"  class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/catalog/mihajil-lightbox.JPG"  alt="Икона Архангел Михаил" /></a></div>
-<div class="amazingcarousel-title">Икона Архангел Михаил</div>
-<div class="amazingcarousel-description">Цена: 5000 грн</div>                    </div>
-                </li>
-                <li class="amazingcarousel-item">
-                    <div class="amazingcarousel-item-container">
-<div class="amazingcarousel-image"><a href="images/catalog/nikola-big-lightbox-lightbox.JPG" title="Икона Святой Николай Чудотворец"  class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/catalog/nikola-big-lightbox.JPG"  alt="Икона Святой Николай Чудотворец" /></a></div>
-<div class="amazingcarousel-title">Икона Святой Николай Чудотворец</div>
-<div class="amazingcarousel-description">Цена: 4850 грн</div>                    </div>
-                </li>
-                <li class="amazingcarousel-item">
-                    <div class="amazingcarousel-item-container">
-<div class="amazingcarousel-image"><a href="images/catalog/nikolaj-slim-lightbox-lightbox.JPG" title="Икона Святой Николай Чудотворец"  class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/catalog/nikolaj-slim-lightbox.JPG"  alt="Икона Святой Николай Чудотворец" /></a></div>
-<div class="amazingcarousel-title">Икона Святой Николай Чудотворец</div>
-<div class="amazingcarousel-description">Цена: 5000 грн</div>                    </div>
-                </li>
-                <li class="amazingcarousel-item">
-                    <div class="amazingcarousel-item-container">
-<div class="amazingcarousel-image"><a href="images/catalog/raspjatie-lightbox-lightbox.JPG" title="Икона Распятие Иисуса Христа"  class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/catalog/raspjatie-lightbox.JPG"  alt="Икона Распятие Иисуса Христа" /></a></div>
-<div class="amazingcarousel-title">Икона Распятие Иисуса Христа</div>
-<div class="amazingcarousel-description">Цена: 8750 грн</div>                    </div>
-                </li>
-                <li class="amazingcarousel-item">
-                    <div class="amazingcarousel-item-container">
-<div class="amazingcarousel-image"><a href="images/catalog/semistel-big-lightbox-lightbox.JPG" title="Икона Семистрельная"  class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/catalog/semistel-big-lightbox.JPG"  alt="Икона Семистрельная" /></a></div>
-<div class="amazingcarousel-title">Икона Семистрельная</div>
-<div class="amazingcarousel-description">Цена: 6000 грн</div>                    </div>
-                </li>
-                <li class="amazingcarousel-item">
-                    <div class="amazingcarousel-item-container">
-<div class="amazingcarousel-image"><a href="images/catalog/semistrel-lightbox-lightbox.JPG" title="Икона Семистрельная"  class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/catalog/semistrel-lightbox.JPG"  alt="Икона Семистрельная" /></a></div>
-<div class="amazingcarousel-title">Икона Семистрельная</div>
-<div class="amazingcarousel-description">Цена: 4000 грн</div>                    </div>
-                </li>
-                <li class="amazingcarousel-item">
-                    <div class="amazingcarousel-item-container">
-<div class="amazingcarousel-image"><a href="images/catalog/tajna-vecherja-lightbox-lightbox.JPG" title="Икона Тайная Вечеря"  class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/catalog/tajna-vecherja-lightbox.JPG"  alt="Икона Тайная Вечеря" /></a></div>
-<div class="amazingcarousel-title">Икона Тайная Вечеря</div>
-<div class="amazingcarousel-description">Цена: 12000 грн</div>                    </div>
-                </li>
-                <li class="amazingcarousel-item">
-                    <div class="amazingcarousel-item-container">
-<div class="amazingcarousel-image"><a href="images/catalog/uspenie-mater-lightbox-lightbox.JPG" title="Икона Успение Богородицы"  class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/catalog/uspenie-mater-lightbox.JPG"  alt="Икона Успение Богородицы" /></a></div>
-<div class="amazingcarousel-title">Икона Успение Богородицы</div>
-<div class="amazingcarousel-description">Цена: 8000 грн</div>                    </div>
-                </li>
-                <li class="amazingcarousel-item">
-                    <div class="amazingcarousel-item-container">
-<div class="amazingcarousel-image"><a href="images/catalog/vlad-big2-lightbox-lightbox.JPG" title="Икона Владимирская Божия Матерь"  class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/catalog/vlad-big2-lightbox.JPG"  alt="Икона Владимирская Божия Матерь" /></a></div>
-<div class="amazingcarousel-title">Икона Владимирская Божия Матерь</div>
-<div class="amazingcarousel-description">Цена: 5000 грн</div>                    </div>
-                </li>
-                <li class="amazingcarousel-item">
-                    <div class="amazingcarousel-item-container">
-<div class="amazingcarousel-image"><a href="images/catalog/vlad-big-lightbox-lightbox.JPG" title="Икона Владимирская Божия Матерь"  class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/catalog/vlad-big-lightbox.JPG"  alt="Икона Владимирская Божия Матерь" /></a></div>
-<div class="amazingcarousel-title">Икона Владимирская Божия Матерь</div>
-<div class="amazingcarousel-description">Цена: 5800 грн</div>                    </div>
-                </li>
-            </ul>
-            <div class="amazingcarousel-prev"></div>
-            <div class="amazingcarousel-next"></div>
-        </div>
-        <div class="amazingcarousel-nav"></div>
-    </div>
-</div>
-<!-- End of body section HTML codes -->
 
-</div>
-<div class="content-about">
-    <h1 class="content-about_h1">О нас</h1>
-    <p class="content-about_p">Наша мастерская выполняет на заказ написание икон по византийской и древнерусской технике. Наши мастера обладают многолетним практическим опытом иконописи, поэтому, у нас Вы можете заказать и купить икону, будь-то Святой Николай или икона Божьей матери или другие святые, будучи уверенным в ее совершенном исполнении. Создавая такие иконы на заказ, как Икона Божьей матери, Спаситель, Святой Николай и угодники и все другие иконы, наши иконописцы строго соблюдают установленные традиционные иконописные каноны. При написании иконы используется желтковая темпера, земляные пигменты, минеральные красители. Иконы на заказ выполняются на основе доски выдержанной липы. При золочении икон иконописная мастерская применяет сусальное золото 960 пробы, сусальное серебро. Чтобы выбрать иконы на заказ или купить икону из каталога готовых работ – Икона Божьей матери, Святой Николай, святые мужи и жены, обращайтесь в мастерскую по телефону (050) 384-27-52. Желаете купить икону, выполненную в лучших традициях иконописи? Добро пожаловать. Иконописная мастерская - иконы на заказ. </p>
-</div>
-<div class="content-why">
-    <h1 class="content-why_h1">  Наши преимущества</h1>
-    <ul>
-        <li class="content-why_list">11 лет на рынке. Более 5000 работ. Огромный опыт</li>
-        <li class="content-why_list">Индивидуальный подход к каждому клиенту. Мы можем изменить некоторые элемененты (цвет рамки, золочение отдельных фрагментов) иконы на ваш вкус</li>
-        <li class="content-why_list">Ручная работа. Весь цикл</li>
-        <li class="content-why_list">Продукция от производителя. У нас вы приобретаете товары по себестоимости, обходя посреднические наценки в 200-300%. </li>
-        <li class="content-why_list">Работа без предоплаты. Оплата товара происходит наложенным платежом при получении заказа, благодаря чему Вы можете быть уверены в нашей добропорядочности.</li>
-        <li class="content-why_list">Гарантия качества. Товар проходит тщательную проверку, благодаря чему Вы можете быть уверены в качестве товара и обслуживания.
-        </li>
-        <li class="content-why_list">Гарантия возврата. В случае, если товар не соответствует заявленным качествам, Вы можете обменять его в течение 14-х дней или вернуть обратно."</li>
-        <li class="content-why_list">Бесплатная доставка </li>
+            <!-- Insert to your webpage where you want to display the carousel -->
+            <div id="amazingcarousel-container-1">
+                <div id="amazingcarousel-1" style="display:none;position:relative;width:100%;max-width:720px;margin:0px auto 0px;">
+                    <div class="amazingcarousel-list-container">
+                        <ul class="amazingcarousel-list">
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/ahtyr-mater-big-ligthbox-lightbox.JPG" title="Икона Ахтырская Божия Матерь" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/ahtyr-mater-big-ligthbox.JPG" alt="Икона Ахтырская Божия Матерь" /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Ахтырская Божия Матерь</div>
+                                    <div class="amazingcarousel-description">Цена: 5500 грн</div>
+                                </div>
+                            </li>
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/georg-big-lightbox-lightbox.JPG" title="Икона Георгий Победоносец" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/georg-big-lightbox.JPG" alt="Икона Георгий Победоносец" /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Георгий Победоносец</div>
+                                    <div class="amazingcarousel-description">Цена: 4500 грн</div>
+                                </div>
+                            </li>
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/hospod-big2-lightbox-lightbox.JPG" title="Икона Господь Вседержитель" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/hospod-big2-lightbox.JPG" alt="Икона Господь Вседержитель" /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Господь Вседержитель</div>
+                                    <div class="amazingcarousel-description">Цена: 5000 грн</div>
+                                </div>
+                            </li>
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/hospod-big3-lightbox-lightbox.JPG" title="Икона Господь Вседержитель" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/hospod-big3-lightbox.JPG" alt="Икона Господь Вседержитель" /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Господь Вседержитель</div>
+                                    <div class="amazingcarousel-description">Цена: 5000 грн</div>
+                                </div>
+                            </li>
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/hospod-big-lightbox-lightbox.JPG" title="hospod-big-lightbox" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/hospod-big-lightbox.JPG" alt="hospod-big-lightbox" /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">hospod-big-lightbox</div>
+                                    <div class="amazingcarousel-description"></div>
+                                </div>
+                            </li>
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/kazan3d-lightbox-lightbox.JPG" title="Икона Казанская Божия Матерь" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/kazan3d-lightbox.JPG" alt="Икона Казанская Божия Матерь" /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Казанская Божия Матерь</div>
+                                    <div class="amazingcarousel-description">Цена: 3500 грн</div>
+                                </div>
+                            </li>
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/kazan-marer-angel-lightbox-lightbox.JPG" title="Икона Казанская Божия Матерь" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/kazan-marer-angel-lightbox.JPG" alt="Икона Казанская Божия Матерь" /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Казанская Божия Матерь</div>
+                                    <div class="amazingcarousel-description">Цена: 5000 грн</div>
+                                </div>
+                            </li>
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/kazan-mater-lightbox-lightbox.JPG" title="Икона Казанская Божия Матерь" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/kazan-mater-lightbox.JPG" alt="Икона Казанская Божия Матерь" /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Казанская Божия Матерь</div>
+                                    <div class="amazingcarousel-description">Цена: 5000 грн</div>
+                                </div>
+                            </li>
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/kazan-para-m2-lightbox-lightbox.JPG" title="Икона Иисус Христос и Казанская Божия Матерь" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/kazan-para-m2-lightbox.JPG" alt="Икона Иисус Христос и Казанская Божия Матерь" /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Иисус Христос и Казанская Божия Матерь</div>
+                                    <div class="amazingcarousel-description">Цена: 5000 грн</div>
+                                </div>
+                            </li>
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/kazan-small-lightbox-lightbox.JPG" title="Икона Казанская Божия Матерь" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/kazan-small-lightbox.JPG" alt="Икона Казанская Божия Матерь" /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Казанская Божия Матерь</div>
+                                    <div class="amazingcarousel-description">Цена: 5000 грн</div>
+                                </div>
+                            </li>
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/miha-angel-lightbox-lightbox.JPG" title="Икона Архангел Михаил " class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/miha-angel-lightbox.JPG" alt="Икона Архангел Михаил " /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Архангел Михаил </div>
+                                    <div class="amazingcarousel-description">Цена: 4500 грн</div>
+                                </div>
+                            </li>
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/mihajil-bezkryl-lightbox-lightbox.JPG" title="Икона Архангел Михаил " class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/mihajil-bezkryl-lightbox.JPG" alt="Икона Архангел Михаил " /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Архангел Михаил </div>
+                                    <div class="amazingcarousel-description">Цена: 5000 грн</div>
+                                </div>
+                            </li>
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/mihajil-lightbox-lightbox.JPG" title="Икона Архангел Михаил" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/mihajil-lightbox.JPG" alt="Икона Архангел Михаил" /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Архангел Михаил</div>
+                                    <div class="amazingcarousel-description">Цена: 5000 грн</div>
+                                </div>
+                            </li>
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/nikola-big-lightbox-lightbox.JPG" title="Икона Святой Николай Чудотворец" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/nikola-big-lightbox.JPG" alt="Икона Святой Николай Чудотворец" /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Святой Николай Чудотворец</div>
+                                    <div class="amazingcarousel-description">Цена: 4850 грн</div>
+                                </div>
+                            </li>
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/nikolaj-slim-lightbox-lightbox.JPG" title="Икона Святой Николай Чудотворец" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/nikolaj-slim-lightbox.JPG" alt="Икона Святой Николай Чудотворец" /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Святой Николай Чудотворец</div>
+                                    <div class="amazingcarousel-description">Цена: 5000 грн</div>
+                                </div>
+                            </li>
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/raspjatie-lightbox-lightbox.JPG" title="Икона Распятие Иисуса Христа" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/raspjatie-lightbox.JPG" alt="Икона Распятие Иисуса Христа" /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Распятие Иисуса Христа</div>
+                                    <div class="amazingcarousel-description">Цена: 8750 грн</div>
+                                </div>
+                            </li>
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/semistel-big-lightbox-lightbox.JPG" title="Икона Семистрельная" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/semistel-big-lightbox.JPG" alt="Икона Семистрельная" /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Семистрельная</div>
+                                    <div class="amazingcarousel-description">Цена: 6000 грн</div>
+                                </div>
+                            </li>
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/semistrel-lightbox-lightbox.JPG" title="Икона Семистрельная" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/semistrel-lightbox.JPG" alt="Икона Семистрельная" /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Семистрельная</div>
+                                    <div class="amazingcarousel-description">Цена: 4000 грн</div>
+                                </div>
+                            </li>
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/tajna-vecherja-lightbox-lightbox.JPG" title="Икона Тайная Вечеря" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/tajna-vecherja-lightbox.JPG" alt="Икона Тайная Вечеря" /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Тайная Вечеря</div>
+                                    <div class="amazingcarousel-description">Цена: 12000 грн</div>
+                                </div>
+                            </li>
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/uspenie-mater-lightbox-lightbox.JPG" title="Икона Успение Богородицы" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/uspenie-mater-lightbox.JPG" alt="Икона Успение Богородицы" /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Успение Богородицы</div>
+                                    <div class="amazingcarousel-description">Цена: 8000 грн</div>
+                                </div>
+                            </li>
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/vlad-big2-lightbox-lightbox.JPG" title="Икона Владимирская Божия Матерь" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/vlad-big2-lightbox.JPG" alt="Икона Владимирская Божия Матерь" /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Владимирская Божия Матерь</div>
+                                    <div class="amazingcarousel-description">Цена: 5000 грн</div>
+                                </div>
+                            </li>
+                            <li class="amazingcarousel-item">
+                                <div class="amazingcarousel-item-container">
+                                    <div class="amazingcarousel-image">
+                                        <a href="images/catalog/vlad-big-lightbox-lightbox.JPG" title="Икона Владимирская Божия Матерь" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720"><img src="images/catalog/vlad-big-lightbox.JPG" alt="Икона Владимирская Божия Матерь" /></a>
+                                    </div>
+                                    <div class="amazingcarousel-title">Икона Владимирская Божия Матерь</div>
+                                    <div class="amazingcarousel-description">Цена: 5800 грн</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="amazingcarousel-prev"></div>
+                        <div class="amazingcarousel-next"></div>
+                    </div>
+                    <div class="amazingcarousel-nav"></div>
+                </div>
+            </div>
+            <!-- End of body section HTML codes -->
+
+        </div>
+        <div class="content-about">
+            <h2 class="content-about_h2">О нас</h2>
+            <p class="content-about_p">Наша мастерская выполняет на заказ написание икон по византийской и древнерусской технике. Наши мастера обладают многолетним практическим опытом иконописи, поэтому, у нас Вы можете заказать и купить икону, будь-то Святой Николай или икона Божьей матери или другие святые, будучи уверенным в ее совершенном исполнении. Создавая такие иконы на заказ, как Икона Божьей матери, Спаситель, Святой Николай и угодники и все другие иконы, наши иконописцы строго соблюдают установленные традиционные иконописные каноны. При написании иконы используется желтковая темпера, земляные пигменты, минеральные красители. Иконы на заказ выполняются на основе доски выдержанной липы. При золочении икон иконописная мастерская применяет сусальное золото 960 пробы, сусальное серебро. Чтобы выбрать иконы на заказ или купить икону из каталога готовых работ – Икона Божьей матери, Святой Николай, святые мужи и жены, обращайтесь в мастерскую по телефону (050) 384-27-52. Желаете купить икону, выполненную в лучших традициях иконописи? Добро пожаловать. Иконописная мастерская - иконы на заказ. </p>
+        </div>
+                <div class="content-catalog">
+            <h2 class="content-catalog_h2" id="catalog">Каталог</h2>
+            <div class="content-catalog_item">
+                <h3>Ахтырская икона Божией Матери</h3><img id="image1" border="0" src="js/multizoom/images/ahtyr-mater.png" style=" height: 400px;" alt="Ахтырская икона Божией Матери">
+                <div class="content-catalog_item-menu">
+                    <ul>
+                        <li class="catalog-menu_material">Материал:</li>
+                        <li class="catalog-menu_material">липовая доска</li>
+                        <li class="catalog-menu_material">масляные краски</li>
+                        <li class="catalog-menu_material">оклад с серебром и позолотой</li>
+                        <li class="catalog-menu_material">киот из дуба</li>
+                        <li class="catalog-menu_material">лаковое покрытие</li>
+                        <li class="catalog-menu_material">Размеры:</li>
+                        <li class="catalog-menu_material">318&#xD7;362 <span>мм</span> </li>
+                    </ul>
+                    <ul class="catalog-menu_price">
+                        <li>Цена:</li>
+                        <li class="price-big">4000 грн</li>
+                    </ul>
+                    <button class="catalog-menu_btn">Заказать</button>
+                </div>
+
+            </div>
+            <div class="content-catalog_item">
+                <h3>Икона Казанская Божья Матерь</h3><img id="image2" border="0" src="js/multizoom/images/kazan-3d.png" style=" height: 400px;" alt="">
+                <div class="content-catalog_item-menu">
+                    <ul>
+                        <li class="catalog-menu_material">Материал:</li>
+                        <li class="catalog-menu_material">липовая доска</li>
+                        <li class="catalog-menu_material">масляные краски</li>
+                        <li class="catalog-menu_material">оклад с серебром и позолотой</li>
+                        <li class="catalog-menu_material">киот из дуба</li>
+                        <li class="catalog-menu_material">лаковое покрытие</li>
+                        <li class="catalog-menu_material">Размеры:</li>
+                        <li class="catalog-menu_material">290&#xD7;340 <span>мм</span> </li>
+                    </ul>
+                    <ul class="catalog-menu_price">
+                        <li>Цена:</li>
+                        <li class="price-big">5150 грн</li>
+                    </ul>
+                    <button class="catalog-menu_btn">Заказать</button>
+                </div>
+
+            </div>
+            <div class="content-catalog_item">
+                <h3>Икона Господь Вседержитель</h3><img id="image3" border="0" src="js/multizoom/images/spasitel1.png" style=" height: 400px;" alt="">
+                <div class="content-catalog_item-menu">
+                    <ul>
+                        <li class="catalog-menu_material">Материал:</li>
+                        <li class="catalog-menu_material">липовая доска</li>
+                        <li class="catalog-menu_material">масляные краски</li>
+                        <li class="catalog-menu_material">оклад с серебром и позолотой</li>
+                        <li class="catalog-menu_material">киот из дуба</li>
+                        <li class="catalog-menu_material">лаковое покрытие</li>
+                        <li class="catalog-menu_material">Размеры:</li>
+                        <li class="catalog-menu_material">318&#xD7;362 <span>мм</span> </li>
+                    </ul>
+                    <ul class="catalog-menu_price">
+                        <li>Цена:</li>
+                        <li class="price-big">5000 грн</li>
+                    </ul>
+                    <button class="catalog-menu_btn">Заказать</button>
+                </div>
+
+            </div>
+            <div class="content-catalog_item">
+                <h3>Иконы Божья Матерь Казанская и Господь Вседержитель</h3><img id="image4" border="0" src="js/multizoom/images/kazan-para-m2.png" style=" height: 400px;" alt="">
+                <div class="content-catalog_item-menu">
+                    <ul>
+                        <li class="catalog-menu_material">Материал:</li>
+                        <li class="catalog-menu_material">липовая доска</li>
+                        <li class="catalog-menu_material">масляные краски</li>
+                        <li class="catalog-menu_material">оклад с серебром и позолотой</li>
+                        <li class="catalog-menu_material">киот из дуба</li>
+                        <li class="catalog-menu_material">лаковое покрытие</li>
+                        <li class="catalog-menu_material">Размеры:</li>
+                        <li class="catalog-menu_material">190&#xD7;230 <span>мм</span> </li>
+                    </ul>
+                    <ul class="catalog-menu_price">
+                        <li>Цена:</li>
+                        <li class="price-big">5950 грн</li>
+                    </ul>
+                    <button class="catalog-menu_btn">Заказать</button>
+                </div>
+
+            </div>
+            <div class="content-catalog_item">
+                <h3>Икона Святой Георгий Победоносец</h3><img id="image5" border="0" src="js/multizoom/images/georg-big.png" style=" height: 400px;" alt="">
+                <div class="content-catalog_item-menu">
+                    <ul>
+                        <li class="catalog-menu_material">Материал:</li>
+                        <li class="catalog-menu_material">липовая доска</li>
+                        <li class="catalog-menu_material">масляные краски</li>
+                        <li class="catalog-menu_material">оклад с серебром и позолотой</li>
+                        <li class="catalog-menu_material">киот из дуба</li>
+                        <li class="catalog-menu_material">лаковое покрытие</li>
+                        <li class="catalog-menu_material">Размеры:</li>
+                        <li class="catalog-menu_material">330&#xD7;400 <span>мм</span> </li>
+                    </ul>
+                    <ul class="catalog-menu_price">
+                        <li>Цена:</li>
+                        <li class="price-big">5200 грн</li>
+                    </ul>
+                    <button class="catalog-menu_btn">Заказать</button>
+                </div>
+
+            </div>
+            <div class="content-catalog_item">
+                <h3>Икона Божья Матерь Казанская</h3><img id="image6" border="0" src="js/multizoom/images/kazan-marer-angel.png" style=" height: 400px;" alt="">
+                <div class="content-catalog_item-menu">
+                    <ul>
+                        <li class="catalog-menu_material">Материал:</li>
+                        <li class="catalog-menu_material">липовая доска</li>
+                        <li class="catalog-menu_material">масляные краски</li>
+                        <li class="catalog-menu_material">оклад с серебром и позолотой</li>
+                        <li class="catalog-menu_material">киот из дуба</li>
+                        <li class="catalog-menu_material">лаковое покрытие</li>
+                        <li class="catalog-menu_material">Размеры:</li>
+                        <li class="catalog-menu_material">310&#xD7;362 <span>мм</span> </li>
+                    </ul>
+                    <ul class="catalog-menu_price">
+                        <li>Цена:</li>
+                        <li class="price-big">5000 грн</li>
+                    </ul>
+                    <button class="catalog-menu_btn">Заказать</button>
+                </div>
+
+            </div>
+            <div class="content-catalog_item">
+                <h3>Икона Божья Матерь Тихвинская</h3><img id="image7" border="0" src="js/multizoom/images/kazan-mater.png" style=" height: 400px;" alt="">
+                <div class="content-catalog_item-menu">
+                    <ul>
+                        <li class="catalog-menu_material">Материал:</li>
+                        <li class="catalog-menu_material">липовая доска</li>
+                        <li class="catalog-menu_material">масляные краски</li>
+                        <li class="catalog-menu_material">оклад с серебром и позолотой</li>
+                        <li class="catalog-menu_material">киот из дуба</li>
+                        <li class="catalog-menu_material">лаковое покрытие</li>
+                        <li class="catalog-menu_material">Размеры:</li>
+                        <li class="catalog-menu_material">300&#xD7;250 <span>мм</span> </li>
+                    </ul>
+                    <ul class="catalog-menu_price">
+                        <li>Цена:</li>
+                        <li class="price-big">4500 грн</li>
+                    </ul>
+                    <button class="catalog-menu_btn">Заказать</button>
+                </div>
+
+            </div>
+            <div class="content-catalog_item">
+                <h3>Икона Божья Матерь Казанская</h3><img id="image8" border="0" src="js/multizoom/images/kazan-small.png" style=" height: 400px;" alt="">
+                <div class="content-catalog_item-menu">
+                    <ul>
+                        <li class="catalog-menu_material">Материал:</li>
+                        <li class="catalog-menu_material">липовая доска</li>
+                        <li class="catalog-menu_material">масляные краски</li>
+                        <li class="catalog-menu_material">оклад с серебром и позолотой</li>
+                        <li class="catalog-menu_material">киот из дуба</li>
+                        <li class="catalog-menu_material">лаковое покрытие</li>
+                        <li class="catalog-menu_material">Размеры:</li>
+                        <li class="catalog-menu_material">318&#xD7;362 <span>мм</span> </li>
+                    </ul>
+                    <ul class="catalog-menu_price">
+                        <li>Цена:</li>
+                        <li class="price-big">3000 грн</li>
+                    </ul>
+                    <button class="catalog-menu_btn">Заказать</button>
+                </div>
+
+            </div>
+            <div class="content-catalog_item">
+                <h3>Икона Святой Архангел Михаил</h3><img id="image9" border="0" src="js/multizoom/images/miha-angel.png" style=" height: 400px;" alt="">
+                <div class="content-catalog_item-menu">
+                    <ul>
+                        <li class="catalog-menu_material">Материал:</li>
+                        <li class="catalog-menu_material">липовая доска</li>
+                        <li class="catalog-menu_material">масляные краски</li>
+                        <li class="catalog-menu_material">оклад с серебром и позолотой</li>
+                        <li class="catalog-menu_material">киот из дуба</li>
+                        <li class="catalog-menu_material">лаковое покрытие</li>
+                        <li class="catalog-menu_material">Размеры:</li>
+                        <li class="catalog-menu_material">200&#xD7;350 <span>мм</span> </li>
+                    </ul>
+                    <ul class="catalog-menu_price">
+                        <li>Цена:</li>
+                        <li class="price-big">4250 грн</li>
+                    </ul>
+                    <button class="catalog-menu_btn">Заказать</button>
+                </div>
+
+            </div>
+            <div class="content-catalog_item">
+                <h3>Икона Архистратиг Михаил </h3><img id="image10" border="0" src="js/multizoom/images/mihajil.png" style=" height: 400px;" alt="">
+                <div class="content-catalog_item-menu">
+                    <ul>
+                        <li class="catalog-menu_material">Материал:</li>
+                        <li class="catalog-menu_material">липовая доска</li>
+                        <li class="catalog-menu_material">масляные краски</li>
+                        <li class="catalog-menu_material">оклад с серебром и позолотой</li>
+                        <li class="catalog-menu_material">киот из дуба</li>
+                        <li class="catalog-menu_material">лаковое покрытие</li>
+                        <li class="catalog-menu_material">Размеры:</li>
+                        <li class="catalog-menu_material">270&#xD7;308 <span>мм</span> </li>
+                    </ul>
+                    <ul class="catalog-menu_price">
+                        <li>Цена:</li>
+                        <li class="price-big">2300 грн</li>
+                    </ul>
+                    <button class="catalog-menu_btn">Заказать</button>
+                </div>
+
+            </div>
+            <div class="content-catalog_item">
+                <h3>Икона Святой Архангел Михаил</h3><img id="image11" border="0" src="js/multizoom/images/mihajil-bezkryl.png" style=" height: 400px;" alt="">
+                <div class="content-catalog_item-menu">
+                    <ul>
+                        <li class="catalog-menu_material">Материал:</li>
+                        <li class="catalog-menu_material">липовая доска</li>
+                        <li class="catalog-menu_material">масляные краски</li>
+                        <li class="catalog-menu_material">оклад с серебром и позолотой</li>
+                        <li class="catalog-menu_material">киот из дуба</li>
+                        <li class="catalog-menu_material">лаковое покрытие</li>
+                        <li class="catalog-menu_material">Размеры:</li>
+                        <li class="catalog-menu_material">300&#xD7;340 <span>мм</span> </li>
+                    </ul>
+                    <ul class="catalog-menu_price">
+                        <li>Цена:</li>
+                        <li class="price-big">3500 грн</li>
+                    </ul>
+                    <button class="catalog-menu_btn">Заказать</button>
+                </div>
+
+            </div>
+            <div class="content-catalog_item">
+                <h3>Икона Святой Николай Чудотворец </h3><img id="image12" border="0" src="js/multizoom/images/nikola-big.png" style=" height: 400px;" alt="">
+                <div class="content-catalog_item-menu">
+                    <ul>
+                        <li class="catalog-menu_material">Материал:</li>
+                        <li class="catalog-menu_material">липовая доска</li>
+                        <li class="catalog-menu_material">масляные краски</li>
+                        <li class="catalog-menu_material">оклад с серебром и позолотой</li>
+                        <li class="catalog-menu_material">киот из дуба</li>
+                        <li class="catalog-menu_material">лаковое покрытие</li>
+                        <li class="catalog-menu_material">Размеры:</li>
+                        <li class="catalog-menu_material">318&#xD7;362 <span>мм</span> </li>
+                    </ul>
+                    <ul class="catalog-menu_price">
+                        <li>Цена:</li>
+                        <li class="price-big">3500 грн</li>
+                    </ul>
+                    <button class="catalog-menu_btn">Заказать</button>
+                </div>
+
+            </div>
+            <div class="content-catalog_item">
+                <h3>Икона Святой Николай Чудотворец</h3><img id="image13" border="0" src="js/multizoom/images/nikolaj-slim.png" style=" height: 400px;" alt="">
+                <div class="content-catalog_item-menu">
+                    <ul>
+                        <li class="catalog-menu_material">Материал:</li>
+                        <li class="catalog-menu_material">липовая доска</li>
+                        <li class="catalog-menu_material">масляные краски</li>
+                        <li class="catalog-menu_material">оклад с серебром и позолотой</li>
+                        <li class="catalog-menu_material">киот из дуба</li>
+                        <li class="catalog-menu_material">лаковое покрытие</li>
+                        <li class="catalog-menu_material">Размеры:</li>
+                        <li class="catalog-menu_material">318&#xD7;362 <span>мм</span> </li>
+                    </ul>
+                    <ul class="catalog-menu_price">
+                        <li>Цена:</li>
+                        <li class="price-big">3000 грн</li>
+                    </ul>
+                    <button class="catalog-menu_btn">Заказать</button>
+                </div>
+
+            </div>
+            <div class="content-catalog_item">
+                <h3>Икона Распятие Христово</h3><img id="image14" border="0" src="js/multizoom/images/raspjatie.png" style=" height: 400px;" alt="">
+                <div class="content-catalog_item-menu">
+                    <ul>
+                        <li class="catalog-menu_material">Материал:</li>
+                        <li class="catalog-menu_material">липовая доска</li>
+                        <li class="catalog-menu_material">масляные краски</li>
+                        <li class="catalog-menu_material">оклад с серебром и позолотой</li>
+                        <li class="catalog-menu_material">киот из дуба</li>
+                        <li class="catalog-menu_material">лаковое покрытие</li>
+                        <li class="catalog-menu_material">Размеры:</li>
+                        <li class="catalog-menu_material">370&#xD7;430 <span>мм</span> </li>
+                    </ul>
+                    <ul class="catalog-menu_price">
+                        <li>Цена:</li>
+                        <li class="price-big">5000 грн</li>
+                    </ul>
+                    <button class="catalog-menu_btn">Заказать</button>
+                </div>
+
+            </div>
+            <div class="content-catalog_item">
+                <h3>Икона Семистрельная</h3><img id="image15" border="0" src="js/multizoom/images/semistel-big.png" style=" height: 400px;" alt="">
+                <div class="content-catalog_item-menu">
+                    <ul>
+                        <li class="catalog-menu_material">Материал:</li>
+                        <li class="catalog-menu_material">липовая доска</li>
+                        <li class="catalog-menu_material">масляные краски</li>
+                        <li class="catalog-menu_material">оклад с серебром и позолотой</li>
+                        <li class="catalog-menu_material">киот из дуба</li>
+                        <li class="catalog-menu_material">лаковое покрытие</li>
+                        <li class="catalog-menu_material">Размеры:</li>
+                        <li class="catalog-menu_material">292&#xD7;362 <span>мм</span> </li>
+                    </ul>
+                    <ul class="catalog-menu_price">
+                        <li>Цена:</li>
+                        <li class="price-big">3500 грн</li>
+                    </ul>
+                    <button class="catalog-menu_btn">Заказать</button>
+                </div>
+
+            </div>
+            <div class="content-catalog_item">
+                <h3>Икона Семистрельная</h3><img id="image16" border="0" src="js/multizoom/images/semistrel.png" style=" height: 400px;" alt="">
+                <div class="content-catalog_item-menu">
+                    <ul>
+                        <li class="catalog-menu_material">Материал:</li>
+                        <li class="catalog-menu_material">липовая доска</li>
+                        <li class="catalog-menu_material">масляные краски</li>
+                        <li class="catalog-menu_material">оклад с серебром и позолотой</li>
+                        <li class="catalog-menu_material">киот из дуба</li>
+                        <li class="catalog-menu_material">лаковое покрытие</li>
+                        <li class="catalog-menu_material">Размеры:</li>
+                        <li class="catalog-menu_material">318&#xD7;362 <span>мм</span> </li>
+                    </ul>
+                    <ul class="catalog-menu_price">
+                        <li>Цена:</li>
+                        <li class="price-big">3000 грн</li>
+                    </ul>
+                    <button class="catalog-menu_btn">Заказать</button>
+                </div>
+
+            </div>
+            <div class="content-catalog_item">
+                <h3>Икона Господь Вседержитель</h3><img id="image17" border="0" src="js/multizoom/images/spasitel1.png" style=" height: 400px;" alt="">
+                <div class="content-catalog_item-menu">
+                    <ul>
+                        <li class="catalog-menu_material">Материал:</li>
+                        <li class="catalog-menu_material">липовая доска</li>
+                        <li class="catalog-menu_material">масляные краски</li>
+                        <li class="catalog-menu_material">оклад с серебром и позолотой</li>
+                        <li class="catalog-menu_material">киот из дуба</li>
+                        <li class="catalog-menu_material">лаковое покрытие</li>
+                        <li class="catalog-menu_material">Размеры:</li>
+                        <li class="catalog-menu_material">318&#xD7;362 <span>мм</span> </li>
+                    </ul>
+                    <ul class="catalog-menu_price">
+                        <li>Цена:</li>
+                        <li class="price-big">4000 грн</li>
+                    </ul>
+                    <button class="catalog-menu_btn">Заказать</button>
+                </div>
+
+            </div>
+            <div class="content-catalog_item">
+                <h3>Икона Тайная Вечеря</h3><img id="image18" border="0" src="js/multizoom/images/tajna-vecherja.png" style=" height: 400px;" alt="">
+                <div class="content-catalog_item-menu">
+                    <ul>
+                        <li class="catalog-menu_material">Материал:</li>
+                        <li class="catalog-menu_material">липовая доска</li>
+                        <li class="catalog-menu_material">масляные краски</li>
+                        <li class="catalog-menu_material">оклад с серебром и позолотой</li>
+                        <li class="catalog-menu_material">киот из дуба</li>
+                        <li class="catalog-menu_material">лаковое покрытие</li>
+                        <li class="catalog-menu_material">Размеры:</li>
+                        <li class="catalog-menu_material">318&#xD7;362 <span>мм</span> </li>
+                    </ul>
+                    <ul class="catalog-menu_price">
+                        <li>Цена:</li>
+                        <li class="price-big">6000 грн</li>
+                    </ul>
+                    <button class="catalog-menu_btn">Заказать</button>
+                </div>
+
+            </div>
+            <div class="content-catalog_item">
+                <h3>Икона Успение Пресвятой Богородицы</h3><img id="image19" border="0" src="js/multizoom/images/uspenie-mater.png" style=" height: 400px;" alt="">
+                <div class="content-catalog_item-menu">
+                    <ul>
+                        <li class="catalog-menu_material">Материал:</li>
+                        <li class="catalog-menu_material">липовая доска</li>
+                        <li class="catalog-menu_material">масляные краски</li>
+                        <li class="catalog-menu_material">оклад с серебром и позолотой</li>
+                        <li class="catalog-menu_material">киот из дуба</li>
+                        <li class="catalog-menu_material">лаковое покрытие</li>
+                        <li class="catalog-menu_material">Размеры:</li>
+                        <li class="catalog-menu_material">318&#xD7;362 <span>мм</span> </li>
+                    </ul>
+                    <ul class="catalog-menu_price">
+                        <li>Цена:</li>
+                        <li class="price-big">5000 грн</li>
+                    </ul>
+                    <button class="catalog-menu_btn">Заказать</button>
+                </div>
+
+            </div>
+            <div class="content-catalog_item">
+                <h3>Икона Божья Матерь Владимирская</h3><img id="image20" border="0" src="js/multizoom/images/vlad-big.png" style=" height: 400px;" alt="">
+                <div class="content-catalog_item-menu">
+                    <ul>
+                        <li class="catalog-menu_material">Материал:</li>
+                        <li class="catalog-menu_material">липовая доска</li>
+                        <li class="catalog-menu_material">масляные краски</li>
+                        <li class="catalog-menu_material">оклад с серебром и позолотой</li>
+                        <li class="catalog-menu_material">киот из дуба</li>
+                        <li class="catalog-menu_material">лаковое покрытие</li>
+                        <li class="catalog-menu_material">Размеры:</li>
+                        <li class="catalog-menu_material">300&#xD7;350 <span>мм</span> </li>
+                    </ul>
+                    <ul class="catalog-menu_price">
+                        <li>Цена:</li>
+                        <li class="price-big">5000 грн</li>
+                    </ul>
+                    <button class="catalog-menu_btn">Заказать</button>
+                </div>
+
+            </div>
+            <div class="content-catalog_item">
+                <h3>Икона Божья Матерь Владимирская</h3><img id="image21" border="0" src="js/multizoom/images/vlad-big2.png" style=" height: 400px;" alt="">
+                <div class="content-catalog_item-menu">
+                    <ul>
+                        <li class="catalog-menu_material">Материал:</li>
+                        <li class="catalog-menu_material">липовая доска</li>
+                        <li class="catalog-menu_material">масляные краски</li>
+                        <li class="catalog-menu_material">оклад с серебром и позолотой</li>
+                        <li class="catalog-menu_material">киот из дуба</li>
+                        <li class="catalog-menu_material">лаковое покрытие</li>
+                        <li class="catalog-menu_material">Размеры:</li>
+                        <li class="catalog-menu_material">318&#xD7;362 <span>мм</span> </li>
+                    </ul>
+                    <ul class="catalog-menu_price">
+                        <li>Цена:</li>
+                        <li class="price-big">5000 грн</li>
+                    </ul>
+                    <button class="catalog-menu_btn">Заказать</button>
+                </div>
+
+            </div>
+            <div class="content-catalog_item">
+                <h3>Икона Господь Вседержитель</h3><img id="image22" border="0" src="js/multizoom/images/hospod-big3.png" style=" height: 400px;" alt="">
+                <div class="content-catalog_item-menu">
+                    <ul>
+                        <li class="catalog-menu_material">Материал:</li>
+                        <li class="catalog-menu_material">липовая доска</li>
+                        <li class="catalog-menu_material">масляные краски</li>
+                        <li class="catalog-menu_material">оклад с серебром и позолотой</li>
+                        <li class="catalog-menu_material">киот из дуба</li>
+                        <li class="catalog-menu_material">лаковое покрытие</li>
+                        <li class="catalog-menu_material">Размеры:</li>
+                        <li class="catalog-menu_material">310&#xD7;362 <span>мм</span> </li>
+                    </ul>
+                    <ul class="catalog-menu_price">
+                        <li>Цена:</li>
+                        <li class="price-big">5000 грн</li>
+                    </ul>
+                    <button class="catalog-menu_btn">Заказать</button>
+                </div>
+
+            </div>
+            <div class="content-catalog_item">
+                <h3>Икона Господь Вседержитель</h3><img id="image23" border="0" src="js/multizoom/images/hospod-big2.png" style=" height: 400px;" alt="">
+                <div class="content-catalog_item-menu">
+                    <ul>
+                        <li class="catalog-menu_material">Материал:</li>
+                        <li class="catalog-menu_material">липовая доска</li>
+                        <li class="catalog-menu_material">масляные краски</li>
+                        <li class="catalog-menu_material">оклад с серебром и позолотой</li>
+                        <li class="catalog-menu_material">киот из дуба</li>
+                        <li class="catalog-menu_material">лаковое покрытие</li>
+                        <li class="catalog-menu_material">Размеры:</li>
+                        <li class="catalog-menu_material">318&#xD7;362 <span>мм</span> </li>
+                    </ul>
+                    <ul class="catalog-menu_price">
+                        <li>Цена:</li>
+                        <li class="price-big">5000 грн</li>
+                    </ul>
+                    <button class="catalog-menu_btn">Заказать</button>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="content-info-block" id="info"><h2 class="content-info-block_h2">Информация по доставке и оплате</h2>
+        <div class="content-info-block_wrapper">
+    <img src="/images/logo-icon/nova-posta.jpg" height="150px"  alt="" class="content-infoblock_img">
+    <h4 class="content-infoblock_text">Доставляем Новой Почтой</h4>
+    <ul class="content-infoblock_list">
+        <li>Мы вам доверяем и не требуем с Вас предоплаты.</li>
+        <li>Мы уважаем Ваше время, и поэтому все заказы отправляем только экспресс доставкой.</li>
+        <li>Вы можете забрать и оплатить часы на почте в любое удобное для Вас время.</li>
+        <li>Доставка займет 1-3 рабочих дня.</li>
     </ul>
-
 </div>
-<div class="content-catalog">
-    <div class="content-catalog_h1">Каталог</div>
-    <div class="content-catalog_item">
-        <h3>Ахтырская икона Божией Матери</h3><img id="image1" border="0" src="js/multizoom/images/ahtyr-mater.png" style=" height: 400px;" alt="">
-        <div class="content-catalog_item-menu">
-            <ul>
-                <li class="catalog-menu_material">Материал:</li>
-                <li class="catalog-menu_material">липовая доска</li>
-                <li class="catalog-menu_material">масляные краски</li>
-                <li class="catalog-menu_material">оклад с серебром и позолотой</li>
-                <li class="catalog-menu_material">киот из дуба</li>
-                <li class="catalog-menu_material">лаковое покрытие</li>
-                <li class="catalog-menu_material">Размеры:</li>
-                <li class="catalog-menu_material">318&#xD7;362 <span>мм</span> </li>
-            </ul>
-            <ul class="catalog-menu_price">
-                <li>Цена:</li>
-                <li class="price-big">5000 грн</li>
-            </ul>
-            <button class="catalog-menu_btn">Заказать</button>
+<div class="content-info-block_item">
+    <img src="/images/logo-icon/garant.png" height="200px" width="300px" alt="" class="content-infoblock_img">
+    <h4 class="content-infoblock_text">Гарантии</h4>
+    <ul class="content-infoblock_list">
+        <li>Мы заботимся о своей репутации, довольные клиенты для нас - на первом месте!</li>
+        <li>Мы соблюдаем закон 'О защите прав потребителя' Если в течении 14 дней после получения покупки, вы по какой-то причине решили вернуть деньги. Вам достаточно связаться с нашими менеджерами. Мы без лишних вопросов примем ваш возврат!</li>
+        <li>Мы являемся производителями товара, поэтому наша продукция проходит все этапы проверки качества в процессе производства. Перед отправкой товара мы его тщательно проверяем.  </li>
+        <li>Никаких посредников и накруток. Мы гарантирум, что наши цены - это цены от производителя.</li>
+    </ul>
+</div>
+<div class="content-info-block_item">
+    <img src="/images/logo-icon/nal.jpg" height="100px" alt="" class="content-infoblock_img">
+    <h4 class="content-infoblock_text">Оплата заказа наложенным платежом</h4>
+    <ul class="content-infoblock_list">
+        <li>Оплата осуществляется в почтовом отделении при получении заказа.</li>
+        <li> Получить заказ можно в почтовом отделении, номер которого был указан
+при оформлении заказа. Уведомление о доставке заказа придет на ваш мобильный телефон.</li>
+        <li>Для получения заказа на почте возьмите с собой паспорт или водительские права.</li>
+        <li>Срок хранения заказа в почтовом отделении составляет 7 дней с момента поступления. Просим вас своевременно получить пришедший заказ.</li>
+    </ul>
+</div>
+<div class="content-howtobuy" id="howtobuy">
+    <h2 class="content-howtobuy_h2">Как покупать?</h2>
+    <ol class="content-howtobuy_list">
+  <li>Вы заказываете звонок на нашем сайте</li>
+  <li>Мы связываемся с вами для уточнения деталей</li>
+  <li>В случае, если выбранная вами икона имеется у нас в наличие, мы высылаем вам ее сразу. Иначе заказ выполняется в течении двух недель. Это время необходимое для создания иконы</li>
+  <li>Мы доставляем посылку по вашему адресу</li>
+  <li>Вы получаете икону и оплачиваете ее на месте</li>
+</ol>
+</div>
+</div>
+</div>
+        <div class="content"></div><!--прижимает подвал-->
+        <div class="content-footer">
+    <div class="footer-wrapper" id="footer">
+        <div class="content-contacts">
+<h4>Контактная информация</h4> <ul class="content-contacts_list">
+    <li><a href="tel:+38 (068) 202-31-58" class="content-contacts_list-link">+38 (068) 202-31-58</a></li>
+    <li><a href="tel:+38 (097) 897-23-74" class="content-contacts_list-link">+38 (097) 897-23-74</a></li>
+    <li><a href="mailto:oneofbps@gmail.com" class="content-contacts_list-link">oneofbps@gmail.com</a></li>
+</ul>
         </div>
-
-    </div>
-    <div class="content-catalog_item">
-        <h3>Икона Казанская Божья Матерь</h3><img id="image2" border="0" src="js/multizoom/images/kazan-3d.png" style=" height: 400px;" alt="">
-        <div class="content-catalog_item-menu">
-            <ul>
-                <li class="catalog-menu_material">Материал:</li>
-                <li class="catalog-menu_material">липовая доска</li>
-                <li class="catalog-menu_material">масляные краски</li>
-                <li class="catalog-menu_material">оклад с серебром и позолотой</li>
-                <li class="catalog-menu_material">киот из дуба</li>
-                <li class="catalog-menu_material">лаковое покрытие</li>
-                <li class="catalog-menu_material">Размеры:</li>
-                <li class="catalog-menu_material">318&#xD7;362 <span>мм</span> </li>
-            </ul>
-            <ul class="catalog-menu_price">
-                <li>Цена:</li>
-                <li class="price-big">5000 грн</li>
-            </ul>
-            <button class="catalog-menu_btn">Заказать</button>
+        <div class="content-social-btn">
+            
         </div>
-
-    </div>
-    <div class="content-catalog_item">
-        <h3>Икона Господь Вседержитель</h3><img id="image3" border="0" src="js/multizoom/images/spasitel1.png" style=" height: 400px;" alt="">
-        <div class="content-catalog_item-menu">
-            <ul>
-                <li class="catalog-menu_material">Материал:</li>
-                <li class="catalog-menu_material">липовая доска</li>
-                <li class="catalog-menu_material">масляные краски</li>
-                <li class="catalog-menu_material">оклад с серебром и позолотой</li>
-                <li class="catalog-menu_material">киот из дуба</li>
-                <li class="catalog-menu_material">лаковое покрытие</li>
-                <li class="catalog-menu_material">Размеры:</li>
-                <li class="catalog-menu_material">318&#xD7;362 <span>мм</span> </li>
-            </ul>
-            <ul class="catalog-menu_price">
-                <li>Цена:</li>
-                <li class="price-big">5000 грн</li>
-            </ul>
-            <button class="catalog-menu_btn">Заказать</button>
-        </div>
-
-    </div>
-    <div class="content-catalog_item">
-        <h3>Иконы Божья Матерь Казанская и Господь Вседержитель</h3><img id="image4" border="0" src="js/multizoom/images/kazan-para-m2.png" style=" height: 400px;" alt="">
-        <div class="content-catalog_item-menu">
-            <ul>
-                <li class="catalog-menu_material">Материал:</li>
-                <li class="catalog-menu_material">липовая доска</li>
-                <li class="catalog-menu_material">масляные краски</li>
-                <li class="catalog-menu_material">оклад с серебром и позолотой</li>
-                <li class="catalog-menu_material">киот из дуба</li>
-                <li class="catalog-menu_material">лаковое покрытие</li>
-                <li class="catalog-menu_material">Размеры:</li>
-                <li class="catalog-menu_material">318&#xD7;362 <span>мм</span> </li>
-            </ul>
-            <ul class="catalog-menu_price">
-                <li>Цена:</li>
-                <li class="price-big">5000 грн</li>
-            </ul>
-            <button class="catalog-menu_btn">Заказать</button>
-        </div>
-
+        <div class="content-links"></div>
     </div>
 </div>
 
+<div id="feedback">
+    <!-- hidden inline form -->
+    <h2>Оставить заявку</h2>
+    <form id="f_contact" name="contact" action="#" method="post">
+        <label for="f_name">Ваше имя</label>
+        <br>
+        <input type="text" id="f_name" name="f_name">
+        <br>
+        <label for="f_email">Ваш E-mail</label>
+        <br>
+        <input type="text" id="f_email" name="f_email">
+        <br>
+        <label for="f_msg">Введите сообщение</label>
+        <br>
+        <textarea id="f_msg" name="f_msg" class="txtarea"></textarea>
+        <button id="f_send">Отправить E-mail</button>
+    </form>
+</div>
+
+<!-- Cкрипты-------------------------------------------------------->
+
+<!--Popup-------------------------------------------------------------------------------------------------------->
 <script type="text/javascript">
-jQuery(document).ready(function($){
-   $('#image1').addimagezoom({ 
-		zoomrange: [4, 10],
-		magnifiersize: [400,400],
-		magnifierpos: 'right',
-		cursorshade: true,
-		largeimage: 'js/multizoom/images/ahtyr-mater-big-ligthbox.jpg' 
-	})
+    $(document).ready(function () {
+        $(".call-back_btn").fancybox();
+        $("#f_contact").submit(function () {
+            return false;
+        });
+        $("#f_send").on("click", function () {
 
-})
+            // тут дальнейшие действия по обработке формы
+            // закрываем окно, как правило делать это нужно после обработки данных
+            $("#f_contact").fadeOut("fast", function () {
+                $(this).before("<p><strong>Ваше сообщение отправлено!</strong></p>");
+                setTimeout("$.fancybox.close()", 1000);
+            });
+        });
+    });
+</script>
+
+<!-- Zoom -->
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $('#image1').addimagezoom({
+            zoomrange: [4, 10],
+            magnifiersize: [400, 400],
+            magnifierpos: 'right',
+            cursorshade: true,
+            largeimage: '/js/multizoom/lightbox-img/ahtyr-mater-big-ligthbox.JPG'
+        })
+
+    })
 </script>
 
 <script type="text/javascript">
-jQuery(document).ready(function($){
-   $('#image2').addimagezoom({ 
-		zoomrange: [4, 10],
-		magnifiersize: [400,400],
-		magnifierpos: 'right',
-		cursorshade: true,
-		largeimage: 'js/multizoom/images/kazan3d-lightbox.jpg' 
-	})
+    jQuery(document).ready(function ($) {
+        $('#image2').addimagezoom({
+            zoomrange: [4, 10],
+            magnifiersize: [400, 400],
+            magnifierpos: 'right',
+            cursorshade: true,
+            largeimage: '/js/multizoom/lightbox-img/kazan3d-lightbox.JPG'
+        })
 
-})
+    })
 </script>
 
 
-   <script type="text/javascript">
-jQuery(document).ready(function($){
-   $('#image3').addimagezoom({ 
-		zoomrange: [4, 10],
-		magnifiersize: [400,400],
-		magnifierpos: 'right',
-		cursorshade: true,
-		largeimage: '/js/multizoom/images/spasitel1-lightbox.JPG' 
-	})
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $('#image3').addimagezoom({
+            zoomrange: [4, 10],
+            magnifiersize: [400, 400],
+            magnifierpos: 'right',
+            cursorshade: true,
+            largeimage: '/js/multizoom/lightbox-img/hospod-big-lightbox.JPG'
+        })
 
-})
-</script>
-   
-
-   <script type="text/javascript">
-jQuery(document).ready(function($){
-   $('#image4').addimagezoom({ 
-		zoomrange: [4, 10],
-		magnifiersize: [400,400],
-		magnifierpos: 'right',
-		cursorshade: true,
-		largeimage: '/js/multizoom/images/kazan-para-m2-lightbox.JPG' 
-	})
-
-})
+    })
 </script>
 
+
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+                $('#image4').addimagezoom({
+                    zoomrange: [4, 10],
+                    magnifiersize: [400, 400],
+                    magnifierpos: 'right',
+                    cursorshade: true,
+                    largeimage: '/js/multizoom/lightbox-img/kazan-para-m2-lightbox.JPG'
+                })
+
+        })
+    </script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#image5').addimagezoom({
+                zoomrange: [4, 10],
+                magnifiersize: [400, 400],
+                magnifierpos: 'right',
+                cursorshade: true,
+                largeimage: '/js/multizoom/lightbox-img/georg-big-lightbox.JPG'
+            })
+
+        })
+    </script>
+    
+        <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#image6').addimagezoom({
+                zoomrange: [4, 10],
+                magnifiersize: [400, 400],
+                magnifierpos: 'right',
+                cursorshade: true,
+                largeimage: '/js/multizoom/lightbox-img/kazan-marer-angel-lightbox.JPG'
+            })
+
+        })
+    </script>
+    
+        <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#image7').addimagezoom({
+                zoomrange: [4, 10],
+                magnifiersize: [400, 400],
+                magnifierpos: 'right',
+                cursorshade: true,
+                largeimage: '/js/multizoom/lightbox-img/kazan-mater-lightbox.JPG'
+            })
+
+        })
+    </script>
+    
+        <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#image8').addimagezoom({
+                zoomrange: [4, 10],
+                magnifiersize: [400, 400],
+                magnifierpos: 'right',
+                cursorshade: true,
+                largeimage: '/js/multizoom/lightbox-img/kazan-small-lightbox.JPG'
+            })
+
+        })
+    </script>
+    
+        <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#image9').addimagezoom({
+                zoomrange: [4, 10],
+                magnifiersize: [400, 400],
+                magnifierpos: 'right',
+                cursorshade: true,
+                largeimage: '/js/multizoom/lightbox-img/miha-angel-lightbox.JPG'
+            })
+
+        })
+    </script>
+    
+        <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#image10').addimagezoom({
+                zoomrange: [4, 10],
+                magnifiersize: [400, 400],
+                magnifierpos: 'right',
+                cursorshade: true,
+                largeimage: '/js/multizoom/lightbox-img/mihajil-lightbox.JPG'
+            })
+
+        })
+    </script>
+    
+        <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#image11').addimagezoom({
+                zoomrange: [4, 10],
+                magnifiersize: [400, 400],
+                magnifierpos: 'right',
+                cursorshade: true,
+                largeimage: '/js/multizoom/lightbox-img/mihajil-bezkryl-lightbox.JPG'
+            })
+
+        })
+    </script>
+    
+        <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#image12').addimagezoom({
+                zoomrange: [4, 10],
+                magnifiersize: [400, 400],
+                magnifierpos: 'right',
+                cursorshade: true,
+                largeimage: '/js/multizoom/lightbox-img/nikola-big-lightbox.JPG'
+            })
+
+        })
+    </script>
+    
+        <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#image13').addimagezoom({
+                zoomrange: [4, 10],
+                magnifiersize: [400, 400],
+                magnifierpos: 'right',
+                cursorshade: true,
+                largeimage: '/js/multizoom/lightbox-img/nikolaj-slim-lightbox.JPG'
+            })
+
+        })
+    </script>
+    
+        <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#image14').addimagezoom({
+                zoomrange: [4, 10],
+                magnifiersize: [400, 400],
+                magnifierpos: 'right',
+                cursorshade: true,
+                largeimage: '/js/multizoom/lightbox-img/raspjatie-lightbox.JPG'
+            })
+
+        })
+    </script>
+    
+        <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#image15').addimagezoom({
+                zoomrange: [4, 10],
+                magnifiersize: [400, 400],
+                magnifierpos: 'right',
+                cursorshade: true,
+                largeimage: '/js/multizoom/lightbox-img/semistel-big-lightbox.JPG'
+            })
+
+        })
+    </script>
+    
+        <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#image16').addimagezoom({
+                zoomrange: [4, 10],
+                magnifiersize: [400, 400],
+                magnifierpos: 'right',
+                cursorshade: true,
+                largeimage: '/js/multizoom/lightbox-img/semistrel-lightbox.JPG'
+            })
+
+        })
+    </script>
+    
+        <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#image17').addimagezoom({
+                zoomrange: [4, 10],
+                magnifiersize: [400, 400],
+                magnifierpos: 'right',
+                cursorshade: true,
+                largeimage: '/js/multizoom/lightbox-img/hospod-big-lightbox.JPG'
+            })
+
+        })
+    </script>
+    
+        <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#image18').addimagezoom({
+                zoomrange: [4, 10],
+                magnifiersize: [400, 400],
+                magnifierpos: 'right',
+                cursorshade: true,
+                largeimage: '/js/multizoom/lightbox-img/tajna-vecherja-lightbox.JPG'
+            })
+
+        })
+    </script>
+    
+        <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#image19').addimagezoom({
+                zoomrange: [4, 10],
+                magnifiersize: [400, 400],
+                magnifierpos: 'right',
+                cursorshade: true,
+                largeimage: '/js/multizoom/lightbox-img/uspenie-mater-lightbox.JPG'
+            })
+
+        })
+    </script>
+    
+        <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#image20').addimagezoom({
+                zoomrange: [4, 10],
+                magnifiersize: [400, 400],
+                magnifierpos: 'right',
+                cursorshade: true,
+                largeimage: '/js/multizoom/lightbox-img/vlad-big-lightbox.JPG'
+            })
+
+        })
+    </script>
+    
+        <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#image21').addimagezoom({
+                zoomrange: [4, 10],
+                magnifiersize: [400, 400],
+                magnifierpos: 'right',
+                cursorshade: true,
+                largeimage: '/js/multizoom/lightbox-img/vlad-big2-lightbox.JPG'
+            })
+
+        })
+    </script>
+    
+        <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#image22').addimagezoom({
+                zoomrange: [4, 10],
+                magnifiersize: [400, 400],
+                magnifierpos: 'right',
+                cursorshade: true,
+                largeimage: '/js/multizoom/lightbox-img/hospod-big3-lightbox.JPG'
+            })
+
+        })
+    </script>
+    
+        <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#image23').addimagezoom({
+                zoomrange: [4, 10],
+                magnifiersize: [400, 400],
+                magnifierpos: 'right',
+                cursorshade: true,
+                largeimage: '/js/multizoom/lightbox-img/hospod-big2-lightbox.JPG'
+            })
+
+        })
+    </script>
+    
+    
 
 </body>
 
